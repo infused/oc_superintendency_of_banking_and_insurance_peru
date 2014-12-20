@@ -35,9 +35,9 @@ urls.each do |category, url|
 
     data = {
       company_name: bank.search('td')[0].text.strip.split("\r\n").first,
-      president: bank.search('td')[1].text,
-      general_manager: bank.search('td')[2].text,
-      address: bank.search('td')[3].text,
+      president: bank.search('td')[1].text.strip.split("\r\n").first,
+      general_manager: bank.search('td')[2].text.strip.split("\r\n").first,
+      address: bank.search('td')[3].text.strip.gsub(/\r\n/, ', ').squeeze(' '),
       telephone: bank.search('td')[4].text.strip.gsub(/\r\n/, ', ').squeeze(' '),
       fax: (bank.search('td')[5].text.strip.gsub(/\r\n/, ', ').squeeze(' ') rescue ''),
       url: (bank.search('td')[0].search('a')[0].attr('href') rescue ''),
