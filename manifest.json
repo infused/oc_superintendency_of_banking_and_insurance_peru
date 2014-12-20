@@ -1,0 +1,26 @@
+{
+  "bot_id": "superintendency_of_banking_and_insurance_peru",
+  "title": "Superintendency of Banking and Insurance (Peru)",
+  "description": "Scape financial organizations for Superintendency of Banking and Insurance (Peru)",
+  "author": "Keith Morrison <keithm@infused.org>",
+  "repository": "https://github.com/infused/oc_superintendency_of_banking_and_insurance_peru",
+  "language": "ruby",
+  "tags": ["bot", "Peru", "world-finance-licences", "medium", "mapthebanks"],
+  "data_type": "primary data",
+  "identifying_fields": [
+    "company_name"
+  ],
+  "company_fields": {
+    "name": "company_name"
+  },
+  "files": [
+    "scraper.rb"
+  ],
+  "frequency": "monthly",
+  "publisher": {
+    "name": "Superintendency of Banking and Insurance (Peru)",
+    "url": "http://www.sbs.gob.pe/0/modulos/JER/JER_Interna.aspx?ARE=0&PFL=0&JER=1736",
+    "terms": "unknown",
+    "terms_url": "unknown"
+  }
+}
