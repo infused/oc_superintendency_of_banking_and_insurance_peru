@@ -14,7 +14,8 @@
     "name": "company_name"
   },
   "files": [
-    "scraper.rb"
+    "scraper.rb",
+    "licence_transformer.rb"
   ],
   "frequency": "monthly",
   "publisher": {
@@ -22,5 +23,12 @@
     "url": "http://www.sbs.gob.pe/0/modulos/JER/JER_Interna.aspx?ARE=0&PFL=0&JER=1736",
     "terms": "unknown",
     "terms_url": "unknown"
-  }
+  },
+  "transformers": [
+    {
+      "file": "licence_transformer.rb",
+      "data_type": "simple-licence",
+      "identifying_fields": ["company_name"]
+    }
+  ]
 }
