@@ -34,12 +34,12 @@ urls.each do |category, url|
     next unless [5,6].include?(bank.search('td').size) # skip group header rows
 
     data = {
-      company_name: bank.search('td')[0].text.split("\r\n").first,
+      company_name: bank.search('td')[0].text.strip.split("\r\n").first,
       president: bank.search('td')[1].text,
       general_manager: bank.search('td')[2].text,
       address: bank.search('td')[3].text,
-      telephone: bank.search('td')[4].text.gsub(/\r\n/, ', ').squeeze(' '),
-      fax: (bank.search('td')[5].text.gsub(/\r\n/, ', ').squeeze(' ') rescue ''),
+      telephone: bank.search('td')[4].text.strip.gsub(/\r\n/, ', ').squeeze(' '),
+      fax: (bank.search('td')[5].text.strip.gsub(/\r\n/, ', ').squeeze(' ') rescue ''),
       url: (bank.search('td')[0].search('a')[0].attr('href') rescue ''),
       category: category,
       source_url: url,
