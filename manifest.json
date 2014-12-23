@@ -3,7 +3,7 @@
   "title": "Superintendency of Banking and Insurance (Peru)",
   "description": "Scape financial organizations for Superintendency of Banking and Insurance (Peru)",
   "author": "Keith Morrison <keithm@infused.org>",
-  "repository": "https://github.com/infused/oc_superintendency_of_banking_and_insurance_peru",
+  "public_repository": "https://github.com/infused/oc_superintendency_of_banking_and_insurance_peru",
   "language": "ruby",
   "tags": ["bot", "Peru", "world-finance-licences", "medium", "mapthebanks"],
   "data_type": "primary data",
